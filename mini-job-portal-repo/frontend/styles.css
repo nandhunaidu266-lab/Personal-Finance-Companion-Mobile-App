@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f5;
+}
+
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: grid;
+  gap: 0.6rem;
+}
+
+input,
+textarea,
+select,
+button {
+  width: 100%;
+  padding: 0.65rem;
+  box-sizing: border-box;
+}
+
+button {
+  background: #1d4ed8;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+  border: 1px solid #e4e4e7;
+  border-radius: 8px;
+  padding: 0.8rem;
+  margin-bottom: 0.6rem;
+}
