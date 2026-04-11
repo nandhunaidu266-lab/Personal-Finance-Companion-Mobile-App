@@ -43,3 +43,9 @@ git branch -M main
 git remote add origin https://github.com/<your-username>/mini-job-portal-repo.git
 git push -u origin main
 ```
+
+## GitHub link format
+
+After creating the repository, your project link will look like:
+
+- `https://github.com/<your-username>/mini-job-portal-repo`

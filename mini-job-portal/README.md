@@ -34,3 +34,9 @@ git push -u origin main
 ```
 
 Replace `<your-username>` with your GitHub username.
+
+## GitHub link format
+
+After creating the repository, your project link will look like:
+
+- `https://github.com/<your-username>/mini-job-portal`
