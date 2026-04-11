@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Job Portal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <h1>Mini Job Portal</h1>
+      <p>Post jobs, search listings, and submit applications.</p>
+    </header>
+
+    <main class="container layout">
+      <section class="card">
+        <h2>Post a Job</h2>
+        <form id="jobForm">
+          <label>
+            Job Title
+            <input id="title" name="title" required maxlength="80" />
+          </label>
+
+          <label>
+            Company
+            <input id="company" name="company" required maxlength="80" />
+          </label>
+
+          <label>
+            Location
+            <input id="location" name="location" required maxlength="80" />
+          </label>
+
+          <label>
+            Type
+            <select id="type" name="type" required>
+              <option value="Full-time">Full-time</option>
+              <option value="Part-time">Part-time</option>
+              <option value="Contract">Contract</option>
+              <option value="Internship">Internship</option>
+            </select>
+          </label>
+
+          <label>
+            Description
+            <textarea id="description" name="description" rows="4" required maxlength="500"></textarea>
+          </label>
+
+          <button type="submit">Add Job</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Browse Jobs</h2>
+
+        <div class="filters">
+          <input id="searchInput" placeholder="Search by title or company" />
+          <select id="typeFilter">
+            <option value="All">All Types</option>
+            <option value="Full-time">Full-time</option>
+            <option value="Part-time">Part-time</option>
+            <option value="Contract">Contract</option>
+            <option value="Internship">Internship</option>
+          </select>
+        </div>
+
+        <p id="statusText" class="status"></p>
+        <ul id="jobList" class="job-list"></ul>
+      </section>
+    </main>
+
+    <dialog id="applyDialog">
+      <form id="applyForm" method="dialog">
+        <h3>Apply for <span id="applyTitle"></span></h3>
+        <label>
+          Your Name
+          <input id="applicantName" required maxlength="80" />
+        </label>
+        <label>
+          Email
+          <input id="applicantEmail" type="email" required maxlength="120" />
+        </label>
+        <label>
+          Short Note
+          <textarea id="applicantNote" rows="3" required maxlength="300"></textarea>
+        </label>
+
+        <div class="dialog-actions">
+          <button type="button" id="cancelApply">Cancel</button>
+          <button type="submit">Submit Application</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="app.js"></script>
+  </body>
+</html>
